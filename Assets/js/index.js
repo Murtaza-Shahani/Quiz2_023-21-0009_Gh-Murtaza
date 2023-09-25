@@ -1,11 +1,16 @@
 function calculateAverage(numbers) {
     let avg;
+    sum=0;
     if(numbers==0)
     {
         console.log("there is no number to calculate average")
     }
     else{
-     avg = numbers/5 ;
+      for(let i=0;i<numbers.length;i++)
+      {
+        sum+=i
+      }
+     avg = sum/numbers.length ;
     }
       return avg
   }
